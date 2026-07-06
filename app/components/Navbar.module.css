@@ -1,0 +1,133 @@
+@import "../globals.css";
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 5%;
+    z-index: 1000;
+    border-radius: 0 0 16px 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    background: rgba(15, 17, 21, 0.7);
+    transition: all 0.3s ease;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navLinks a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: var(--text-primary);
+}
+
+/* Scrolled state */
+.navbar.scrolled {
+    box-shadow: var(--glass-shadow);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Hamburger toggle */
+.navToggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before { top: -7px; }
+.hamburger::after { top: 7px; }
+
+.navToggle[aria-expanded="true"] .hamburger {
+    background: transparent;
+}
+
+.navToggle[aria-expanded="true"] .hamburger::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navToggle[aria-expanded="true"] .hamburger::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .navToggle {
+        display: block;
+    }
+
+    .navLinks {
+        display: none;
+        position: fixed;
+        top: 72px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: rgba(15, 17, 21, 0.95);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+        border: 1px solid var(--glass-border);
+        border-radius: 0 0 16px 16px;
+        padding: 1rem 5%;
+        gap: 1rem;
+        box-shadow: var(--glass-shadow);
+    }
+
+    .navLinks.active {
+        display: flex;
+    }
+}

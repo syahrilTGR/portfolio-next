@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "macOS Sequoia on ThinkPad T480",
+    "date": "Systems Configuration",
+    "desc": "A high-stability Hackintosh implementation focusing on hardware compatibility and system performance. Bypassed macOS Sequoia's limited support for Intel wireless hardware through advanced spoofing and root patching techniques.",
+    "highlights": [
+      "Graphics & Audio: Framebuffer patching for Intel UHD 620 via WhateverGreen and AppleALC (Layout ID 86) for HD Audio.",
+      "Power Management: Custom ACPI with SSDT-BATX for dual-battery and CPUFriend for efficient CPU frequency scaling.",
+      "Networking & I/O: OCLP root patching for Intel WiFi, Thunderbolt 3 hotplug (SSDT-TB3), and mapped I2C trackpad.",
+      "Stability: Resolved sleep/wake loops with SSDT-GPRW and handled CMOS boot issues via RTCMemoryFixup."
+    ],
+    "tags": ["OpenCore", "ACPI / SSDT", "OCLP", "Kernel Debugging"]
+  }
+]

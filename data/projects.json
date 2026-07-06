@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "HiJack: IoT-Based Smart Anti-Hypothermia Jacket (PKM 2025)",
+    "date": "Jul 2025 - Oct 2025",
+    "desc": "An IoT-based wearable smart jacket designed to prevent hypothermia in mountain climbers. It integrates hardware sensors and a mobile app to automate heating based on body temperature.",
+    "highlights": [
+      "Led end-to-end hardware prototyping (circuit design, sensor assembly, and functional testing).",
+      "Funded by the Ministry of Education via PKM 2025.",
+      "Secured dual Intellectual Property Rights (Hardware & Mobile App)."
+    ],
+    "tags": ["IoT", "Circuit Design", "Wearable Tech"]
+  },
+  {
+    "id": 2,
+    "title": "Eco-Bin: AI Smart Waste Classification",
+    "date": "Jan 2026 - Present",
+    "desc": "An intelligent, automated waste classification system bridging advanced deep learning with edge computing devices for real-time object detection.",
+    "highlights": [
+      "Core Technical Developer",
+      "Tech: MQTT Protocol, Distributed Networks, Model Synchronization, Cloud-to-Edge Sync."
+    ],
+    "tags": ["AI / Deep Learning", "Edge Computing", "MQTT"]
+  },
+  {
+    "id": 3,
+    "title": "ESP32 Smart Quick Shifter & Launch Control",
+    "date": "May 2026 - Present",
+    "desc": "An ESP32-based automotive control system engineered for motorcycle tuning. Utilizes Hall effect sensors for precise gear-shift detection and engine ignition-cut timing.",
+    "highlights": [
+      "Features: Quick Shifter, Launch Control, Pit Limiter.",
+      "Hardware-in-the-loop testing in high-vibration environments."
+    ],
+    "tags": ["Embedded Systems", "ESP32", "Automotive Control"]
+  },
+  {
+    "id": 4,
+    "title": "Kido Smart Ecosystem",
+    "date": "IoT & Android App",
+    "desc": "An integrated ecosystem featuring an ESP32-based smart badge terminal for RFID attendance/badge claiming and a companion Kotlin Android app for parents to monitor activities and pair devices.",
+    "highlights": [
+      "Hardware: C++, ESP32, PlatformIO, RFID MFRC522, I2C LCD.",
+      "Software: Kotlin (Android App), Firebase Realtime Database."
+    ],
+    "tags": ["IoT", "ESP32", "Kotlin", "Firebase"]
+  },
+  {
+    "id": 5,
+    "title": "CaloriLens",
+    "date": "Machine Learning",
+    "desc": "An Artificial Intelligence project focusing on computer vision and deep learning to recognize food objects from images for calorie tracking and estimation.",
+    "highlights": [
+      "Tech Stack: Python, Jupyter Notebook, Computer Vision.",
+      "Focus: Data Science, Model Training, Object Detection."
+    ],
+    "tags": ["AI", "Computer Vision", "Python"]
+  }
+]

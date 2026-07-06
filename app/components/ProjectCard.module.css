@@ -1,0 +1,81 @@
+@import "../globals.css";
+
+.projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.projectCard {
+    padding: 2.5rem;
+    border-radius: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.projectHeader {
+    margin-bottom: 1rem;
+}
+
+.projectHeader h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.projectDate {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.projectDesc {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.projectHighlights {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.projectHighlights li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.projectHighlights li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.projectTags span {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--accent-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}

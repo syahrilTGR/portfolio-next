@@ -92,3 +92,25 @@
     font-size: 0.8rem;
     font-weight: 600;
 }
+
+.projectFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.githubLink {
+    color: var(--text-secondary);
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.githubLink:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}

@@ -1,11 +1,11 @@
 {
   "url": "http://localhost:3000",
-  "timestamp": "2026-07-06 20:01:30",
+  "timestamp": "2026-07-06 21:15:29",
   "metrics": {
-    "loadTime": 530.2999999970198,
-    "fcp": 224,
+    "loadTime": 546.2000000029802,
+    "fcp": 208,
     "resourceCount": 23,
-    "totalSize": 885522
+    "totalSize": 885626
   },
   "accessibility": {
     "issues": []

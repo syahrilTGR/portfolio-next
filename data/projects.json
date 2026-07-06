@@ -42,7 +42,9 @@
       "Hardware: C++, ESP32, PlatformIO, RFID MFRC522, I2C LCD.",
       "Software: Kotlin (Android App), Firebase Realtime Database."
     ],
-    "tags": ["IoT", "ESP32", "Kotlin", "Firebase"]
+    "tags": ["IoT", "ESP32", "Kotlin", "Firebase"],
+    "githubUrl": "https://github.com/syahrilTGR/Kido-Smart-Badge",
+    "githubUrlFirmware": "https://github.com/syahrilTGR/KidoSmartBadge-Firmware"
   },
   {
     "id": 5,
@@ -53,6 +55,7 @@
       "Tech Stack: Python, Jupyter Notebook, Computer Vision.",
       "Focus: Data Science, Model Training, Object Detection."
     ],
-    "tags": ["AI", "Computer Vision", "Python"]
+    "tags": ["AI", "Computer Vision", "Python"],
+    "githubUrl": "https://github.com/syahrilTGR/CaloriLens"
   }
 ]

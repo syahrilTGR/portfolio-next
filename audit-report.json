@@ -1,0 +1,42 @@
+{
+  "url": "http://localhost:3000",
+  "timestamp": "2026-07-06 20:01:30",
+  "metrics": {
+    "loadTime": 530.2999999970198,
+    "fcp": 224,
+    "resourceCount": 23,
+    "totalSize": 885522
+  },
+  "accessibility": {
+    "issues": []
+  },
+  "seo": {
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1",
+      "next-size-adjust": "",
+      "description": "Telecommunications & Digital Technology student at Polinema. Hackintosh builder, IoT tinkerer.",
+      "og:title": "Syahril \u2014 Portfolio",
+      "og:description": "Telecommunications & Digital Technology student at Polinema. Hackintosh builder, IoT tinkerer.",
+      "og:image": "http://localhost:3000/assets/images/profile.jpg",
+      "og:type": "website",
+      "twitter:card": "summary",
+      "twitter:title": "Syahril \u2014 Portfolio",
+      "twitter:description": "Telecommunications & Digital Technology student at Polinema. Hackintosh builder, IoT tinkerer.",
+      "twitter:image": "http://localhost:3000/assets/images/profile.jpg"
+    },
+    "h1": "Muhammad SyahrilEka Pratama",
+    "title": "Syahril \u2014 Portfolio",
+    "ogImage": "http://localhost:3000/assets/images/profile.jpg",
+    "twitterImage": "http://localhost:3000/assets/images/profile.jpg"
+  },
+  "quality": {
+    "brokenImages": [],
+    "duplicates": [],
+    "viewport": "width=device-width, initial-scale=1",
+    "responsive": {
+      "overflow_mobile": false,
+      "overflow_tablet": false,
+      "overflow_desktop": false
+    }
+  }
+}

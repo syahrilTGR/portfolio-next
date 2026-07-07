@@ -52,7 +52,7 @@ export default function Home() {
               </p>
               <br />
               <p>
-                My expertise extends beyond hardware assembly. From developing AI-powered computer vision models and crafting Kotlin companion apps, to deep-level OS kernel configurations (Hackintosh), I thrive on building innovative, end-to-end solutions that push the boundaries of technology.
+                My expertise extends beyond hardware assembly. From developing AI-powered computer vision models to crafting Kotlin companion apps, I thrive on building innovative, end-to-end solutions that push the boundaries of technology.
               </p>
             </div>
           </section>
@@ -120,8 +120,8 @@ export default function Home() {
               <p>I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
               <div className={styles.contactLinks}>
                 <a href="mailto:syahriltanggir@gmail.com" className="btn-primary">Email Me</a>
-                <a href="https://wa.me/628385532141" target="_blank" className="btn-secondary">WhatsApp</a>
-                <a href="https://linkedin.com/in/muhammad-syahril-eka-pratama-776bb4330" target="_blank" className="btn-secondary">LinkedIn Profile</a>
+                <a href="https://wa.me/628385532141" target="_blank" rel="noopener noreferrer" className="btn-secondary">WhatsApp</a>
+                <a href="https://linkedin.com/in/muhammad-syahril-eka-pratama-776bb4330" target="_blank" rel="noopener noreferrer" className="btn-secondary">LinkedIn Profile</a>
               </div>
             </div>
           </section>

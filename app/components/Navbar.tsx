@@ -28,7 +28,12 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`} role="navigation" aria-label="Main navigation">
+    <nav
+      className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}
+      role="navigation"
+      aria-label="Main navigation"
+      style={{ backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)' }}
+    >
       <div className={styles.logo}>
         syahril<span className={styles.logoAccent}>/</span>
       </div>

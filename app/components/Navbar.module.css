@@ -9,10 +9,10 @@
     align-items: center;
     padding: 1rem 8%;
     z-index: 1000;
-    background: rgba(10, 12, 16, 0.85);
+    background: rgba(10, 12, 16, 0.25);
     border-bottom: 1px solid var(--border-color);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     transition: all 0.2s ease;
 }
 
@@ -70,7 +70,10 @@
 /* Scrolled state */
 .navbar.scrolled {
     border-bottom-color: var(--border-color);
-    background: rgba(10, 12, 16, 0.95);
+    background: rgba(10, 12, 16, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
 }
 
 /* Hamburger toggle */

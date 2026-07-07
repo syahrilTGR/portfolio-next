@@ -70,23 +70,30 @@ export default function Hero() {
 
   return (
     <section id="hero" className={styles.hero} aria-labelledby="hero-title">
+      {/* Background Grid Pattern */}
+      <div className="grid-pattern" aria-hidden="true" />
+
       {/* Background Blobs */}
       <div ref={blob1Ref} className="blob blob-1" aria-hidden="true" />
       <div ref={blob2Ref} className="blob blob-2" aria-hidden="true" />
 
       <div className={styles.heroContent}>
+        <div className={styles.terminalPrefix}>
+          <span className="mono badge badge-green">$ whoami</span>
+        </div>
         <p className={styles.greeting}>Hello, I&apos;m</p>
         <h1 id="hero-title" className={styles.name}>
           Muhammad Syahril<br />
           <span className="gradient-text">Eka Pratama</span>
         </h1>
-        <p className={styles.role}>Telecommunications & Digital Technology Enthusiast</p>
+        <p className={styles.role}><span className="mono badge badge-amber">IoT Systems Engineer</span></p>
         <p className={styles.summary}>
-          I specialize in IoT solutions and telecommunication networks, building the bridge between hardware and software to solve real-world problems.
+          Building the bridge between hardware and software.
+          Specializing in <strong>IoT</strong>, <strong>Embedded Systems</strong>, and low-level <strong>OS configuration</strong>.
         </p>
         <div className={styles.heroCta}>
-          <a href="#projects" className="btn-primary">View My Work</a>
-          <a href="#contact" className="btn-secondary">Download CV</a>
+          <a href="#projects" className="btn-primary">View Work</a>
+          <a href="#contact" className="btn-secondary">Get in Touch</a>
         </div>
       </div>
 

@@ -7,101 +7,115 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 5%;
+    padding: 1rem 8%;
     z-index: 1000;
-    border-radius: 0 0 16px 16px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
-    background: rgba(15, 17, 21, 0.7);
-    transition: all 0.3s ease;
+    background: rgba(10, 12, 16, 0.85);
+    border-bottom: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.2s ease;
 }
 
 .logo {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
-.logo:hover {
-    transform: scale(1.02);
-    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
-}
-
-.logo span {
+.logoAccent {
     color: var(--accent-color);
 }
 
 .navLinks {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 0.25rem;
     align-items: center;
 }
 
-.navLinks a {
+.navLink {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 5px;
+    transition: color 0.15s ease, background 0.15s ease;
 }
 
-.navLinks a:hover {
+.navLink:hover {
     color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.navMono {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+.navPrimary {
+    background: var(--accent-gradient) !important;
+    color: var(--bg-color) !important;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+}
+
+.navPrimary:hover {
+    box-shadow: 0 0 16px rgba(16, 185, 129, 0.3);
 }
 
 /* Scrolled state */
 .navbar.scrolled {
-    box-shadow: var(--glass-shadow);
-    border-bottom: 1px solid var(--glass-border);
+    border-bottom-color: var(--border-color);
+    background: rgba(10, 12, 16, 0.95);
 }
 
 /* Hamburger toggle */
 .navToggle {
     display: none;
     background: none;
-    border: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.4rem;
     z-index: 1001;
 }
 
 .hamburger {
     display: block;
-    width: 24px;
+    width: 20px;
     height: 2px;
     background: var(--text-primary);
     position: relative;
-    transition: background 0.3s ease;
+    transition: background 0.2s ease;
 }
 
 .hamburger::before,
 .hamburger::after {
     content: '';
     position: absolute;
-    width: 24px;
+    width: 20px;
     height: 2px;
     background: var(--text-primary);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
-.hamburger::before { top: -7px; }
-.hamburger::after { top: 7px; }
+.hamburger::before { top: -6px; }
+.hamburger::after { top: 6px; }
 
 .navToggle[aria-expanded="true"] .hamburger {
     background: transparent;
 }
 
 .navToggle[aria-expanded="true"] .hamburger::before {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(4px, 4px);
 }
 
 .navToggle[aria-expanded="true"] .hamburger::after {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(4px, -4px);
 }
 
 /* Responsive */
@@ -113,18 +127,14 @@
     .navLinks {
         display: none;
         position: fixed;
-        top: 72px;
+        top: 56px;
         right: 0;
         left: 0;
         flex-direction: column;
-        background: rgba(15, 17, 21, 0.95);
-        backdrop-filter: var(--glass-blur);
-        -webkit-backdrop-filter: var(--glass-blur);
-        border: 1px solid var(--glass-border);
-        border-radius: 0 0 16px 16px;
-        padding: 1rem 5%;
-        gap: 1rem;
-        box-shadow: var(--glass-shadow);
+        background: rgba(10, 12, 16, 0.98);
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 8%;
+        gap: 0.5rem;
     }
 
     .navLinks.active {

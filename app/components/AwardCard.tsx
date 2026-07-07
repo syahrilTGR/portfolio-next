@@ -1,4 +1,4 @@
-import styles from './ProjectCard.module.css';
+import styles from './AwardCard.module.css';
 
 interface AwardCardProps {
   title: string;
@@ -8,12 +8,12 @@ interface AwardCardProps {
 
 export default function AwardCard({ title, date, desc }: AwardCardProps) {
   return (
-    <div className={`${styles.projectCard} glass`}>
-      <div className={styles.projectHeader}>
+    <div className={`${styles.awardCard} card`}>
+      <div className={styles.awardHeader}>
         <h3>{title}</h3>
-        <span className={styles.projectDate}>{date}</span>
+        <span className={styles.awardDate}>{date}</span>
       </div>
-      <p className={styles.projectDesc}>{desc}</p>
+      <p className={styles.awardDesc}>{desc}</p>
     </div>
   );
 }

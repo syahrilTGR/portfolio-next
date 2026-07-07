@@ -5,8 +5,8 @@ import styles from './Navbar.module.css';
 
 const navItems = [
   { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#awards', label: 'Awards' },
+  { href: '#projects', label: 'Projects', mono: true },
+  { href: '#awards', label: 'Awards', mono: true },
   { href: '#other', label: 'Other' },
   { href: '#skills', label: 'Skills' },
   { href: '#contact', label: 'Contact', primary: true },
@@ -28,9 +28,9 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className={`${styles.navbar} glass ${scrolled ? styles.scrolled : ''}`} role="navigation" aria-label="Main navigation">
+    <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`} role="navigation" aria-label="Main navigation">
       <div className={styles.logo}>
-        syahril<span>.</span>
+        syahril<span className={styles.logoAccent}>/</span>
       </div>
 
       <button
@@ -48,7 +48,7 @@ export default function Navbar() {
           <li key={item.href}>
             <a
               href={item.href}
-              className={item.primary ? 'btn-primary' : ''}
+              className={`${styles.navLink} ${item.primary ? styles.navPrimary : ''} ${item.mono ? styles.navMono : ''}`}
               onClick={closeMenu}
             >
               {item.label}

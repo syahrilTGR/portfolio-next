@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, date, desc, highlights, tags, githubUrl, githubUrlFirmware }: ProjectCardProps) {
   return (
-    <div className={`${styles.projectCard} glass`}>
+    <div className={`${styles.projectCard} card`}>
       <div className={styles.projectHeader}>
         <h3>{title}</h3>
         <span className={styles.projectDate}>{date}</span>

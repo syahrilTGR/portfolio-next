@@ -46,7 +46,7 @@ export default function Home() {
             <h2 className={`${styles.sectionTitle} gradient-text`}>
               About <span>Me</span>
             </h2>
-            <div className={`${styles.aboutContent} glass`}>
+            <div className={`${styles.aboutContent} card`}>
               <p>
                 I am a passionate Telecommunications and Digital Technology student at <strong>Politeknik Negeri Malang (Polinema)</strong>. My journey revolves around bridging the gap between hardware and software, specializing in <strong>Internet of Things (IoT)</strong> and <strong>Embedded Systems</strong>.
               </p>
@@ -116,7 +116,7 @@ export default function Home() {
             <h2 className={`${styles.sectionTitle} gradient-text`}>
               Let&apos;s <span>Connect</span>
             </h2>
-            <div className={`${styles.contactCard} glass`}>
+            <div className={`${styles.contactCard} card`}>
               <p>I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
               <div className={styles.contactLinks}>
                 <a href="mailto:syahriltanggir@gmail.com" className="btn-primary">Email Me</a>

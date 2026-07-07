@@ -1,14 +1,15 @@
 @import "../globals.css";
 
 .projectCard {
-    padding: 2rem;
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    padding: 1.75rem;
+    border-radius: 8px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
     position: relative;
-    overflow: hidden;
 }
 
 .projectCard::before {
@@ -17,16 +18,18 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 2px;
     background: var(--accent-gradient);
+    border-radius: 8px 8px 0 0;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.15s ease;
 }
 
 .projectCard:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    border-color: rgba(59, 130, 246, 0.4);
+    border-color: var(--border-accent);
+    background: var(--card-hover-bg);
+    box-shadow: 0 0 0 1px var(--border-accent), 0 12px 40px rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px);
 }
 
 .projectCard:hover::before {
@@ -39,35 +42,40 @@
 
 .projectHeader h3 {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
 }
 
 .projectDate {
-    font-size: 0.9rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
     color: var(--accent-color);
     font-weight: 500;
+    display: block;
 }
 
 .projectDesc {
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     flex-grow: 1;
     line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 .projectHighlights {
     list-style: none;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
     color: var(--text-secondary);
 }
 
 .projectHighlights li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
+    font-family: var(--font-mono);
 }
 
 .projectHighlights li::before {
@@ -80,17 +88,22 @@
 .projectTags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
     margin-top: auto;
+    padding-top: 0.5rem;
 }
 
 .projectTags span {
-    background: rgba(59, 130, 246, 0.1);
-    color: var(--accent-color);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
     font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--accent-color);
+    border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .projectFooter {
@@ -99,12 +112,12 @@
     align-items: center;
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid var(--glass-border);
+    border-top: 1px solid var(--border-color);
 }
 
 .githubLink {
-    color: var(--text-secondary);
-    transition: color 0.2s ease, transform 0.2s ease;
+    color: var(--text-muted);
+    transition: color 0.15s ease, transform 0.15s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,5 +125,5 @@
 
 .githubLink:hover {
     color: var(--accent-color);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }

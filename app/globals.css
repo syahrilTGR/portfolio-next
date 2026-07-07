@@ -44,7 +44,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     width: 100%;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 56px;
 }
 
 body {
@@ -236,7 +236,7 @@ body {
 
     html {
         scroll-behavior: auto;
-        scroll-padding-top: 80px;
+        scroll-padding-top: 56px;
     }
 
     .hero-image {

@@ -49,13 +49,13 @@
   {
     "id": 5,
     "title": "CaloriLens",
-    "date": "Machine Learning",
-    "desc": "An Artificial Intelligence project focusing on computer vision and deep learning to recognize food objects from images for calorie tracking and estimation.",
+    "date": "ML & Android",
+    "desc": "An AI-powered calorie tracking app combining computer vision (food recognition) with a native Android frontend for real-time nutritional estimation.",
     "highlights": [
-      "Tech Stack: Python, Jupyter Notebook, Computer Vision.",
-      "Focus: Data Science, Model Training, Object Detection."
+      "ML: Python, TensorFlow Lite, Computer Vision.",
+      "Android: Kotlin, Jetpack Compose, CameraX integration."
     ],
-    "tags": ["AI", "Computer Vision", "Python"],
+    "tags": ["AI", "Kotlin", "Computer Vision"],
     "githubUrl": "https://github.com/syahrilTGR/CaloriLens"
   }
 ]

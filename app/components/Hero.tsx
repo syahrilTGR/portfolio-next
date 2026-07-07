@@ -89,7 +89,7 @@ export default function Hero() {
         <p className={styles.role}><span className="mono badge badge-amber">IoT Systems Engineer</span></p>
         <p className={styles.summary}>
           Building the bridge between hardware and software.
-          Specializing in <strong>IoT</strong>, <strong>Embedded Systems</strong>, and low-level <strong>OS configuration</strong>.
+          Specializing in <strong>IoT</strong> and <strong>Embedded Systems</strong>.
         </p>
         <div className={styles.heroCta}>
           <a href="#projects" className="btn-primary">View Work</a>

@@ -5,7 +5,8 @@
     "issuer": "Kemenristek/DRPM",
     "date": "2025",
     "type": "Research Grant",
-    "certificateUrl": "/certificates/pkm-kc-jaket-pintar.pdf"
+    "certificateUrl": "/certificates/pkm-kc-jaket-pintar.pdf",
+    "thumbnailUrl": "/certificates/pkm-kc-jaket-pintar_thumb.png"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
       "AI",
       "LLM",
       "Prompt Engineering"
-    ]
+    ],
+    "thumbnailUrl": "/certificates/ibm-llm_thumb.png"
   },
   {
     "id": 3,
@@ -32,7 +34,8 @@
     "tags": [
       "AI Agents",
       "Agentic AI"
-    ]
+    ],
+    "thumbnailUrl": "/certificates/ibm-build-ai-agent_thumb.png"
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "tags": [
       "Agentic AI",
       "Workflow"
-    ]
+    ],
+    "thumbnailUrl": "/certificates/ibm-agentic-ai_thumb.png"
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "tags": [
       "RAG",
       "Vector DB"
-    ]
+    ],
+    "thumbnailUrl": "/certificates/ibm-rag_thumb.png"
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "tags": [
       "Multi-agent",
       "AI Agents"
-    ]
+    ],
+    "thumbnailUrl": "/certificates/ibm-unleashing-agents_thumb.png"
   },
   {
     "id": 7,
@@ -77,7 +83,8 @@
     "issuer": "Management and Science University (MSU)",
     "date": "May 2025",
     "type": "Guest Lecture",
-    "certificateUrl": "/certificates/msu-guest-lecture.pdf"
+    "certificateUrl": "/certificates/msu-guest-lecture.pdf",
+    "thumbnailUrl": "/certificates/msu-guest-lecture_thumb.png"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "issuer": "Hummatech",
     "date": "2025",
     "type": "Webinar",
-    "certificateUrl": "/certificates/hummatech-ai-webinar.pdf"
+    "certificateUrl": "/certificates/hummatech-ai-webinar.pdf",
+    "thumbnailUrl": "/certificates/hummatech-ai-webinar_thumb.png"
   },
   {
     "id": 9,
@@ -93,7 +101,8 @@
     "issuer": "Model United Nations",
     "date": "2025",
     "type": "Webinar",
-    "certificateUrl": "/certificates/mun-webinar.png"
+    "certificateUrl": "/certificates/mun-webinar.png",
+    "thumbnailUrl": "/certificates/mun-webinar.png"
   },
   {
     "id": 10,
@@ -101,7 +110,8 @@
     "issuer": "Politeknik Negeri Malang",
     "date": "Nov 2024",
     "type": "Event",
-    "certificateUrl": "/certificates/education-fair-2024.pdf"
+    "certificateUrl": "/certificates/education-fair-2024.pdf",
+    "thumbnailUrl": "/certificates/education-fair-2024_thumb.png"
   },
   {
     "id": 11,
@@ -109,7 +119,8 @@
     "issuer": "Polinema",
     "date": "2025",
     "type": "Event",
-    "certificateUrl": "/certificates/student-day.png"
+    "certificateUrl": "/certificates/student-day.png",
+    "thumbnailUrl": "/certificates/student-day.png"
   },
   {
     "id": 12,
@@ -117,7 +128,8 @@
     "issuer": "Universitas Telkom / XL Axiata / Meta",
     "date": "Dec 2025",
     "type": "Webinar",
-    "certificateUrl": "/certificates/training-1088.pdf"
+    "certificateUrl": "/certificates/training-1088.pdf",
+    "thumbnailUrl": "/certificates/training-1088_thumb.png"
   },
   {
     "id": 13,
@@ -125,7 +137,8 @@
     "issuer": "Himpunan Mahasiswa Elektro, Politeknik Negeri Malang",
     "date": "Dec 2024",
     "type": "Committee",
-    "certificateUrl": "/certificates/panitia-pbl.pdf"
+    "certificateUrl": "/certificates/panitia-pbl.pdf",
+    "thumbnailUrl": "/certificates/panitia-pbl_thumb.png"
   },
   {
     "id": 14,
@@ -133,7 +146,8 @@
     "issuer": "Univ. Negeri Malang (VOCASPIRA FEST)",
     "date": "May 2025",
     "type": "Award",
-    "certificateUrl": "/certificates/issic-1st-favorite.pdf"
+    "certificateUrl": "/certificates/issic-1st-favorite.pdf",
+    "thumbnailUrl": "/certificates/issic-1st-favorite_preview.png"
   },
   {
     "id": 15,
@@ -141,7 +155,8 @@
     "issuer": "Uplatz Training",
     "date": "Feb 2025",
     "type": "Course",
-    "certificateUrl": "/certificates/coursera-uc.pdf"
+    "certificateUrl": "/certificates/coursera-uc.pdf",
+    "thumbnailUrl": "/certificates/coursera-uc_thumb.png"
   },
   {
     "id": 16,
@@ -149,6 +164,7 @@
     "issuer": "Forum Indonesia Muda",
     "date": "2026",
     "type": "Competition",
-    "certificateUrl": "/certificates/fim-finalis.png"
+    "certificateUrl": "/certificates/fim-finalis.png",
+    "thumbnailUrl": "/certificates/fim-finalis.png"
   }
 ]

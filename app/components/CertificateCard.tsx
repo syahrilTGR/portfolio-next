@@ -1,4 +1,5 @@
 import styles from './CertificateCard.module.css';
+import Image from 'next/image';
 
 interface CertificateCardProps {
   title: string;
@@ -8,6 +9,7 @@ interface CertificateCardProps {
   certificateUrl: string;
   verifyUrl?: string;
   tags?: string[];
+  thumbnailUrl?: string;
 }
 
 export default function CertificateCard({
@@ -18,27 +20,19 @@ export default function CertificateCard({
   certificateUrl,
   verifyUrl,
   tags,
+  thumbnailUrl,
 }: CertificateCardProps) {
   return (
-    <div className={`${styles.certificateCard} card`}>
+    <article className={`${styles.certificateCard} card`}>
       <div className={styles.certificateHeader}>
-        <div className={styles.certificateMeta}>
-          <span className={styles.certificateType}>{type}</span>
-          <span className={styles.certificateDate}>{date}</span>
-        </div>
-        <h3 className={styles.certificateTitle}>{title}</h3>
-        <p className={styles.certificateIssuer}>{issuer}</p>
+        <span className={styles.certificateType}>{type}</span>
+        <time className={styles.certificateDate} dateTime={date}>
+          {date}
+        </time>
       </div>
 
-      {tags && tags.length > 0 && (
-        <div className={styles.certificateTags}>
-          {tags.map((tag, i) => (
-            <span key={i} className={styles.certificateTag}>
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
+      <h3 className={styles.certificateTitle}>{title}</h3>
+      <p className={styles.certificateIssuer}>{issuer}</p>
 
       <div className={styles.certificateActions}>
         <a
@@ -74,6 +68,29 @@ export default function CertificateCard({
           </a>
         )}
       </div>
-    </div>
+
+      {tags && tags.length > 0 && (
+        <div className={styles.certificateTags} aria-label="Skills">
+          {tags.map((tag, i) => (
+            <span key={i} className={styles.certificateTag}>
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {thumbnailUrl && (
+        <div className={styles.certificateThumbnail} aria-hidden="true">
+          <Image
+            src={thumbnailUrl}
+            alt=""
+            fill
+            className={styles.thumbnailImage}
+            sizes="320px"
+            loading="lazy"
+          />
+        </div>
+      )}
+    </article>
   );
 }

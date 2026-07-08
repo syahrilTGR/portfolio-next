@@ -3,24 +3,28 @@
     "id": 1,
     "title": "1st Place Champion - ISSIC 2025",
     "date": "May 2025",
-    "desc": "Secured 1st Place in University Category and IoT for Health and Safety Sub-Theme at the IoT Smart Solution Innovation Challenge. Evaluated on hardware assembly precision and code troubleshooting speed."
+    "desc": "Secured 1st Place in University Category and IoT for Health and Safety Sub-Theme at the IoT Smart Solution Innovation Challenge. Evaluated on hardware assembly precision and code troubleshooting speed.",
+    "certificateUrl": "/certificates/issic-health-safety.pdf"
   },
   {
     "id": 2,
     "title": "Best Technology - PBL Expo Polinema",
     "date": "Nov 2025",
-    "desc": "Awarded 'Best Technology' as part of Tim Bolo Suryo, outperforming numerous project-based learning initiatives based on engineering complexity and real-world impact."
+    "desc": "Awarded 'Best Technology' as part of Tim Bolo Suryo, outperforming numerous project-based learning initiatives based on engineering complexity and real-world impact.",
+    "certificateUrl": "/certificates/pbl-best-tech.pdf"
   },
   {
     "id": 3,
     "title": "2nd Place - National UI/UX Design (IT-CAS)",
     "date": "Nov 2025",
-    "desc": "Secured 2nd Place at IT-Competition AMIKOM Surakarta by developing a user-centric digital product prototype using comprehensive UI/UX methodologies and Figma."
+    "desc": "Secured 2nd Place at IT-Competition AMIKOM Surakarta by developing a user-centric digital product prototype using comprehensive UI/UX methodologies and Figma.",
+    "certificateUrl": "/certificates/itcas-uiux.pdf"
   },
   {
     "id": 4,
     "title": "Bronze Medalist - National Essay",
     "date": "Feb 2026",
-    "desc": "Achieved Bronze at Forum Indonesia Muda (FIM) 2 for articulating strategic, innovative concepts and academic arguments addressing contemporary issues."
+    "desc": "Achieved Bronze at Forum Indonesia Muda (FIM) 2 for articulating strategic, innovative concepts and academic arguments addressing contemporary issues.",
+    "certificateUrl": "/certificates/fim-bronze.png"
   }
 ]

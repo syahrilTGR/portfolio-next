@@ -39,7 +39,12 @@ export default function Home() {
 
       <Navbar />
 
-      <main>
+      {/* Skip to main content link */}
+      <a href="#main-content" className={styles.skipLink}>
+        Skip to main content
+      </a>
+
+      <main id="main-content">
         <Hero />
 
         {/* About Section */}

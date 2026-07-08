@@ -106,3 +106,26 @@
     gap: 1.5rem;
     align-items: stretch;
 }
+
+/* Skip to main content link */
+.skipLink {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 1.5rem;
+  background: var(--accent-green);
+  color: var(--bg-primary);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  text-decoration: none;
+  border-radius: 0 0 8px 8px;
+  z-index: 10000;
+  transition: top 0.2s ease;
+}
+
+.skipLink:focus {
+  top: 0;
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
+}

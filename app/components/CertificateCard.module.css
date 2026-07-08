@@ -145,7 +145,7 @@
 }
 
 .certificateCard:hover .certificateThumbnail {
-  opacity: 0.1;
+  opacity: 0.15;
 }
 
 .thumbnailImage {

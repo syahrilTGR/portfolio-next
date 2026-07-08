@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './CertificateModal.module.css';
 
 interface CertificateModalProps {
@@ -23,18 +23,47 @@ export default function CertificateModal({
   type,
 }: CertificateModalProps) {
   const [iframeLoaded, setIframeLoaded] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const previousActiveElement = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
+
+      // Focus trap - Tab navigation
+      if (e.key === 'Tab' && modalRef.current) {
+        const focusableElements = modalRef.current.querySelectorAll<HTMLElement>(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+      }
     };
+
     if (isOpen) {
+      // Store previously focused element
+      previousActiveElement.current = document.activeElement as HTMLElement;
       document.addEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'hidden';
+
+      // Focus the close button when modal opens
+      setTimeout(() => {
+        modalRef.current?.querySelector('button')?.focus();
+      }, 0);
     }
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = '';
+      // Restore focus to previously focused element
+      previousActiveElement.current?.focus();
     };
   }, [isOpen, onClose]);
 
@@ -45,7 +74,7 @@ export default function CertificateModal({
 
   return (
     <div className={`${styles.modalOverlay} ${isOpen ? styles.open : ''}`} onClick={onClose} role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <div className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
+      <div ref={modalRef} className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
         <div className={styles.modalHeader}>
           <div>
             <span className={styles.modalType}>{type}</span>

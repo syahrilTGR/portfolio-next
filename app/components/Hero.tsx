@@ -8,7 +8,7 @@ export default function Hero() {
   const blob1Ref = useRef<HTMLDivElement>(null);
   const blob2Ref = useRef<HTMLDivElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(true);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -41,7 +41,6 @@ export default function Hero() {
     let animation2: Animation;
 
     const animateBlobs = () => {
-      const { innerWidth, innerHeight } = window;
       const x = mousePos.x;
       const y = mousePos.y;
 
@@ -69,13 +68,13 @@ export default function Hero() {
   }, [mousePos, prefersReducedMotion]);
 
   return (
-    <section id="hero" className={styles.hero} aria-labelledby="hero-title">
+    <section id="hero" className={styles.hero} aria-labelledby="hero-title" suppressHydrationWarning>
       {/* Background Grid Pattern */}
-      <div className="grid-pattern" aria-hidden="true" />
+      <div className="grid-pattern" aria-hidden="true" suppressHydrationWarning />
 
       {/* Background Blobs */}
-      <div ref={blob1Ref} className="blob blob-1" aria-hidden="true" />
-      <div ref={blob2Ref} className="blob blob-2" aria-hidden="true" />
+      <div ref={blob1Ref} className="blob blob-1" aria-hidden="true" suppressHydrationWarning />
+      <div ref={blob2Ref} className="blob blob-2" aria-hidden="true" suppressHydrationWarning />
 
       <div className={styles.heroContent}>
         <div className={styles.terminalPrefix}>
@@ -99,7 +98,7 @@ export default function Hero() {
 
       <div className={styles.heroImage}>
         <Image
-          src="/assets/images/profile.jpg"
+          src="/assets/images/profile.webp"
           alt="Muhammad Syahril Eka Pratama"
           fill
           className={styles.profilePic}

@@ -37,7 +37,7 @@ export default function Icon({ name, size = 16, className }: IconProps) {
   if (!icon) return null;
 
   return (
-    <span className={className} style={{ display: 'inline-flex', width: size, height: size }}>
+    <span className={className} style={{ display: 'inline-flex', width: size, height: size }} role="img" aria-hidden="true">
       {icon}
     </span>
   );

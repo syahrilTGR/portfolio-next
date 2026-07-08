@@ -30,7 +30,7 @@ export default function CertificateTabs({ certificates }: CertificateTabsProps) 
     : certificates.filter(c => c.type === activeTab);
 
   return (
-    <div className={styles.tabsContainer}>
+    <div className={styles.tabsContainer} suppressHydrationWarning>
       <div className={styles.tabsHeader}>
         {tabs.map((tab) => (
           <button

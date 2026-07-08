@@ -23,8 +23,8 @@
 .modalContainer {
   position: relative;
   width: 100%;
-  max-width: 900px;
-  max-height: 90vh;
+  max-width: 95vw;
+  height: 95vh;
   background: var(--bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -102,6 +102,7 @@
   justify-content: center;
   transition: all 0.15s ease;
   flex-shrink: 0;
+  z-index: 10;
 }
 
 .closeBtn:hover {
@@ -112,7 +113,7 @@
 
 .modalContent {
   flex: 1;
-  min-height: 400px;
+  min-height: 0;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -122,6 +123,7 @@
 .iframe {
   flex: 1;
   width: 100%;
+  min-height: 0;
   border: none;
   background: var(--bg-primary);
 }
@@ -129,6 +131,7 @@
 .image {
   flex: 1;
   width: 100%;
+  min-height: 0;
   object-fit: contain;
   background: var(--bg-primary);
 }

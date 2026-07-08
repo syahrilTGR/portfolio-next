@@ -3,10 +3,12 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectCard from './components/ProjectCard';
 import AwardCard from './components/AwardCard';
+import CertificateCard from './components/CertificateCard';
 import Skills from './components/Skills';
 import ScrollReveal from './components/ScrollReveal';
 import projects from '../data/projects.json';
 import awards from '../data/awards.json';
+import certificates from '../data/certificates.json';
 import skills from '../data/skills.json';
 import other from '../data/other.json';
 import styles from './page.module.css';
@@ -107,6 +109,20 @@ export default function Home() {
               My <span>Skills</span>
             </h2>
             <Skills skills={skills} />
+          </section>
+        </ScrollReveal>
+
+        {/* Certificates Section */}
+        <ScrollReveal>
+          <section id="certificates" className={`${styles.section} certificates`}>
+            <h2 className={`${styles.sectionTitle} gradient-text`}>
+              <span>Certificates</span>
+            </h2>
+            <div className={styles.certificatesGrid}>
+              {certificates.map((c) => (
+                <CertificateCard key={c.id} {...c} />
+              ))}
+            </div>
           </section>
         </ScrollReveal>
 

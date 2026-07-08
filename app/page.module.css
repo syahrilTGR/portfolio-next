@@ -98,3 +98,11 @@
 .projectsGrid > *:nth-child(4) { transition-delay: 240ms; }
 .projectsGrid > *:nth-child(5) { transition-delay: 320ms; }
 .projectsGrid > *:nth-child(6) { transition-delay: 400ms; }
+
+/* Certificates Grid */
+.certificatesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}

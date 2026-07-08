@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "title": "Pendanaan PKM-KC: Jaket Pintar Berbasis IoT",
+    "issuer": "Kemenristek/DRPM",
+    "date": "2025",
+    "type": "Research Grant",
+    "certificateUrl": "/certificates/pkm-kc-jaket-pintar.pdf"
+  },
+  {
+    "id": 2,
+    "title": "Introduction to Large Language Models",
+    "issuer": "IBM SkillsBuild",
+    "date": "Jun 2026",
+    "type": "Course",
+    "certificateUrl": "/certificates/ibm-llm.pdf",
+    "verifyUrl": "https://skills.yourlearning.ibm.com/certificate/ALM-COURSE_4058915",
+    "tags": [
+      "AI",
+      "LLM",
+      "Prompt Engineering"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Build an AI Agent (Intelligent by Design)",
+    "issuer": "IBM SkillsBuild",
+    "date": "Jun 2026",
+    "type": "Course",
+    "certificateUrl": "/certificates/ibm-build-ai-agent.pdf",
+    "verifyUrl": "https://www.credly.com/go/jcgT2Icx",
+    "tags": [
+      "AI Agents",
+      "Agentic AI"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Make Agentic AI Work for You",
+    "issuer": "IBM SkillsBuild",
+    "date": "Jun 2026",
+    "type": "Course",
+    "certificateUrl": "/certificates/ibm-agentic-ai.pdf",
+    "verifyUrl": "https://www.credly.com/go/3f53cKGX",
+    "tags": [
+      "Agentic AI",
+      "Workflow"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Introduction to Retrieval-Augmented Generation",
+    "issuer": "IBM SkillsBuild",
+    "date": "2026",
+    "type": "Course",
+    "certificateUrl": "/certificates/ibm-rag.pdf",
+    "tags": [
+      "RAG",
+      "Vector DB"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Unleashing the Power of AI Agents",
+    "issuer": "IBM SkillsBuild",
+    "date": "2026",
+    "type": "Course",
+    "certificateUrl": "/certificates/ibm-unleashing-agents.pdf",
+    "tags": [
+      "Multi-agent",
+      "AI Agents"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Guest Lecture Participant - MSU Malaysia x Polinema",
+    "issuer": "Management and Science University (MSU)",
+    "date": "May 2025",
+    "type": "Guest Lecture",
+    "certificateUrl": "/certificates/msu-guest-lecture.pdf"
+  },
+  {
+    "id": 8,
+    "title": "Webinar: AI & Otomatisasi Apakah Menggantikan Pekerjaan Kita",
+    "issuer": "Hummatech",
+    "date": "2025",
+    "type": "Webinar",
+    "certificateUrl": "/certificates/hummatech-ai-webinar.pdf"
+  },
+  {
+    "id": 9,
+    "title": "Webinar MUN",
+    "issuer": "Model United Nations",
+    "date": "2025",
+    "type": "Webinar",
+    "certificateUrl": "/certificates/mun-webinar.png"
+  },
+  {
+    "id": 10,
+    "title": "International Education Fair 2024 Taiwan-Indonesia",
+    "issuer": "Politeknik Negeri Malang",
+    "date": "Nov 2024",
+    "type": "Event",
+    "certificateUrl": "/certificates/education-fair-2024.pdf"
+  },
+  {
+    "id": 11,
+    "title": "Student Day Participant",
+    "issuer": "Polinema",
+    "date": "2025",
+    "type": "Event",
+    "certificateUrl": "/certificates/student-day.png"
+  },
+  {
+    "id": 12,
+    "title": "Global Content Delivery and Next-Generation Transport Networks",
+    "issuer": "Universitas Telkom / XL Axiata / Meta",
+    "date": "Dec 2025",
+    "type": "Webinar",
+    "certificateUrl": "/certificates/training-1088.pdf"
+  },
+  {
+    "id": 13,
+    "title": "Panitia - Electro Cup 2024",
+    "issuer": "Himpunan Mahasiswa Elektro, Politeknik Negeri Malang",
+    "date": "Dec 2024",
+    "type": "Committee",
+    "certificateUrl": "/certificates/panitia-pbl.pdf"
+  },
+  {
+    "id": 14,
+    "title": "1st Favorite - University Category, ISSIC 2025",
+    "issuer": "Univ. Negeri Malang (VOCASPIRA FEST)",
+    "date": "May 2025",
+    "type": "Award",
+    "certificateUrl": "/certificates/issic-1st-favorite.pdf"
+  },
+  {
+    "id": 15,
+    "title": "Internet of Things (IoT) Fundamentals Certification Training",
+    "issuer": "Uplatz Training",
+    "date": "Feb 2025",
+    "type": "Course",
+    "certificateUrl": "/certificates/coursera-uc.pdf"
+  },
+  {
+    "id": 16,
+    "title": "Finalis - Forum Indonesia Muda 2",
+    "issuer": "Forum Indonesia Muda",
+    "date": "2026",
+    "type": "Competition",
+    "certificateUrl": "/certificates/fim-finalis.png"
+  }
+]

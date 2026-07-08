@@ -101,7 +101,7 @@
     "issuer": "Model United Nations",
     "date": "2025",
     "type": "Webinar",
-    "certificateUrl": "/certificates/mun-webinar.png",
+    "certificateUrl": "/certificates/mun-webinar-orig.png",
     "thumbnailUrl": "/certificates/mun-webinar.png"
   },
   {
@@ -164,7 +164,7 @@
     "issuer": "Forum Indonesia Muda",
     "date": "2026",
     "type": "Competition",
-    "certificateUrl": "/certificates/fim-finalis.png",
+    "certificateUrl": "/certificates/fim-finalis-orig.png",
     "thumbnailUrl": "/certificates/fim-finalis.png"
   }
 ]

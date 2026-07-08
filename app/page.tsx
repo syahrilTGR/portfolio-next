@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectCard from './components/ProjectCard';
 import AwardCard from './components/AwardCard';
-import CertificateCard from './components/CertificateCard';
+import CertificateTabs from './components/CertificateTabs';
 import Skills from './components/Skills';
 import ScrollReveal from './components/ScrollReveal';
 import projects from '../data/projects.json';
@@ -118,11 +118,7 @@ export default function Home() {
             <h2 className={`${styles.sectionTitle} gradient-text`}>
               <span>Certificates</span>
             </h2>
-            <div className={styles.certificatesGrid}>
-              {certificates.map((c) => (
-                <CertificateCard key={c.id} {...c} />
-              ))}
-            </div>
+            <CertificateTabs certificates={certificates} />
           </section>
         </ScrollReveal>
 

@@ -1,8 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './CertificateTabs.module.css';
 import CertificateCard from './CertificateCard';
+
+const INITIAL_VISIBLE_COUNT = 6;
 
 interface Certificate {
   id: number;
@@ -22,12 +24,19 @@ interface CertificateTabsProps {
 
 export default function CertificateTabs({ certificates }: CertificateTabsProps) {
   const [activeTab, setActiveTab] = useState<string>('All');
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
 
-  const tabs = ['All', 'Course', 'Award', 'Webinar', 'Event'];
+  const tabs = ['All', 'Course', 'Award', 'Webinar', 'Event', 'Research Grant', 'Competition'];
 
   const filteredCerts = activeTab === 'All'
     ? certificates
     : certificates.filter(c => c.type === activeTab);
+
+  const visibleCerts = filteredCerts.slice(0, visibleCount);
+
+  useEffect(() => {
+    setVisibleCount(INITIAL_VISIBLE_COUNT);
+  }, [activeTab]);
 
   return (
     <div className={styles.tabsContainer} suppressHydrationWarning>
@@ -49,10 +58,18 @@ export default function CertificateTabs({ certificates }: CertificateTabsProps) 
       </div>
 
       <div className={styles.tabsContent}>
-        {filteredCerts.map((cert) => (
+        {visibleCerts.map((cert) => (
           <CertificateCard key={cert.id} {...cert} />
         ))}
       </div>
+
+      {filteredCerts.length > visibleCount && (
+        <div className={styles.showMoreContainer}>
+          <button onClick={() => setVisibleCount(vc => vc + INITIAL_VISIBLE_COUNT)} className={styles.showMoreBtn}>
+            Show More
+          </button>
+        </div>
+      )}
     </div>
   );
 }

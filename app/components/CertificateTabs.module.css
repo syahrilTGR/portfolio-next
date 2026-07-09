@@ -60,14 +60,25 @@
   align-items: stretch;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .tabsHeader {
-    gap: 0.375rem;
-  }
+.showMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
 
-  .tab {
-    padding: 0.4375rem 0.75rem;
-    font-size: 0.75rem;
-  }
+.showMoreBtn {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.showMoreBtn:hover {
+  border-color: var(--accent-green);
+  color: var(--accent-green);
 }

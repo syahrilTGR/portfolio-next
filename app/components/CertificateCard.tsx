@@ -52,7 +52,22 @@ export default function CertificateCard({
         <p className={styles.certificateIssuer}>{issuer}</p>
 
         <div className={styles.certificateActions}>
-          <span className={`${styles.certificateBtn} ${styles.certificateBtnPrimary}`}>
+          <span
+            className={`${styles.certificateBtn} ${styles.certificateBtnPrimary}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              setModalOpen(true);
+            }}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                setModalOpen(true);
+              }
+            }}
+            aria-label={`View certificate: ${title}`}
+          >
             <Icon name="certificate" size={16} />
             <span>View Certificate</span>
           </span>
@@ -104,6 +119,7 @@ export default function CertificateCard({
         issuer={issuer}
         date={date}
         type={type}
+        thumbnailUrl={thumbnailUrl}
       />
     </>
   );
